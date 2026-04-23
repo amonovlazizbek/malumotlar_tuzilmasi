@@ -6,14 +6,12 @@ n = int(input("Nechta element kiritasiz: "))
 
 for _ in range(n):
     value = input("Qiymat kiriting: ")
-    priority = input("Prioritet (y/p): ")
+    pri = input(" yuqori (y): ")
 
-    if priority.lower() == "yuqori" or priority.lower() == "y":
+    if pri.lower() == "yuqori" or pri.lower() == "y":
         dq.appendleft(value)  
     else:
         dq.append(value)       
-
-print("Chiqish tartibi:")
 
 while dq:
     print(dq.popleft(), end=" ")
